@@ -1,0 +1,88 @@
+/* #################################################
+            GENERAL
+################################################# */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Roboto:wght@300;400&display=swap');
+
+/* Colors */
+:root {
+  --main-color: #222831;
+  --back-color: #393e46;
+  --back-light-color: #a3a4a5;
+  --light-color: #f7c873;
+  --light-hover-color: #937234;
+  --button-hover-color: #d8aa56;
+  --white-color: #eeeeee;
+  --bg-right-color: #626364;
+  --bg-left-color: #393e46;
+}
+
+
+/*
+  CSS Main
+*/
+.number-format {
+  font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--main-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--light-color);
+}
+
+body {
+  display: flex;
+  background-color: var(--back-color);
+  color: var(--white-color);
+  font-family: 'Raleway', sans-serif;
+  margin: 0px;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  color: var(--back-light-color);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  transition: color 0.2s;
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.general-btn:not(:hover) {
+  transition: all 0.5s ease;
+  position: relative;
+  background-color: var(--light-color);
+  border-radius: 30px;
+  padding: 0.7rem;
+  color: var(--main-color);
+  border-style: solid;
+  border-color: var(--light-color);
+  border-width: 2px;
+}
+
+.general-btn:hover {
+  transition: all 0.5s ease;
+  background-color: var(--back-color);
+  border-style: solid;
+  border-color: var(--button-hover-color);
+  border-width: 2px;
+  color: var(--light-color);
+  border-radius: 30px;
+  padding: 0.7rem;
+}
